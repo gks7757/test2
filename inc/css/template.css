@@ -688,6 +688,9 @@ a.site_link::after {
 	.borard_view .view_cont {
 		padding: 20px 0;
 	}
+	.borard_view .view_cont p {
+		font-size: 14px;
+	}
 	.borard_view aside > div > ul li a {
 		padding: 14px 110px 6px 6px;
 	}
