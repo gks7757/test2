@@ -1,0 +1,254 @@
+﻿@charset 'utf-8';
+@font-face {
+	font-family: 'NotoKr';
+	font-style: normal;
+	font-weight: 100;
+	src: url('../font/notokr-light.woff2') format('woff2'),
+		 url('../font/notokr-light.woff') format('woff');
+}
+@font-face {
+	font-family: 'NotoKr';
+	font-style: normal;
+	font-weight: 300;
+	src: url('../font/notokr-regular.woff2') format('woff2'),
+		 url('../font/notokr-regular.woff') format('woff');
+}
+@font-face {
+	font-family: 'NotoKr';
+	font-style: normal;
+	font-weight: 500;
+	src: url('../font/notokr-medium.woff2') format('woff2'),
+		 url('../font/notokr-medium.woff') format('woff');
+}
+@font-face {
+	font-family: 'NotoKr';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../font/notokr-bold.woff2') format('woff2'),
+		 url('../font/notokr-bold.woff') format('woff');
+}
+
+/* Default Setting */
+header, footer, section, article,
+aside, nav, hgroup, details, menu,
+figure, figcaption {
+	display: block;
+}
+body {
+	font-family: 'NotoKr', sans-serif;
+	font-size: 14px;
+	color: #3E424D;
+	font-weight: 300;
+	line-height: 1.4;
+	margin: 0px;
+	padding: 0px;
+	letter-spacing: -0.05em;
+	background-color: #fff;
+}
+img {
+	max-width: 100%;
+	border: 0px;
+	vertical-align: middle;
+}
+a {
+	text-decoration: none;
+	color: #3E424D;
+}
+input,button,select,textarea {
+	font-family: 'NotoKr', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	outline: 0;
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+	background: none;
+	vertical-align: middle;
+}
+select,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	line-height: 24px;
+	padding: 14px 18px;
+	height: 50px;
+	box-sizing: border-box;
+	background-color: #f5f6f8;
+	-webkit-appearance: none;
+	border: 1px solid transparent;
+}
+textarea {
+	padding: 10px 12px;
+	line-height: 150%;
+	resize: vertical;
+}
+select:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+	border: 1px solid #2F414D;
+}
+select {
+	border: 1px solid #2F414D;
+}
+button,input[type="submit"],input[type="image"] {
+	cursor: pointer;
+	-webkit-appearance:none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: #E0E4EF;
+}
+::-moz-placeholder { /* Firefox 19+ */
+	color: #E0E4EF;
+}
+:-ms-input-placeholder { /* IE 10+ */
+	color: #E0E4EF;
+}
+:-moz-placeholder { /* Firefox 18- */
+	color: #E0E4EF;
+}
+input:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+input:focus::-moz-placeholder {
+	color: transparent;
+}
+input:focus:-ms-input-placeholder {
+	color: transparent;
+}
+input:focus::-ms-input-placeholder {
+	color: transparent;
+}
+::-ms-clear,
+::-ms-reveal {
+	display: none
+}
+input[type="checkbox"] {
+	position: relative;
+	top: -1px;
+	width: 15px;
+	height: 15px;
+	border: 0px;
+	padding: 0px;
+	margin: 0px 2px 0px 0px;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	appearance: none;
+	-webkit-appearance: none;
+	background: url(../images/template/bullet_checkbox.png) no-repeat left top;
+}
+input[type="checkbox"]:checked{
+	background-position: right top; 
+}
+hr {
+	display: none;
+}
+h1,h2,h3,h4,h5,h6 {
+	margin: 0px;
+	color: #2F414D;
+	font-weight: 400;
+}
+h1,h2 {
+	font-size: 24px;
+	line-height: 1;
+	font-weight: 700;
+}
+h3 {
+	font-size: 28px;
+}
+h4 {
+	font-size: 24px;
+}
+p {
+	margin: 0px;
+}
+ul,ol {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+dl,dt,dd {
+	padding: 0px;
+	margin: 0px;
+}
+table {
+	overflow: hidden;
+	border-collapse: collapse;
+}
+th {
+	font-weight: 500;
+}
+fieldset legend {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+fieldset {
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+table caption {
+	text-indent: -9999px;
+	overflow: hidden;
+	height: 2px;
+	margin-top: -2px;
+}
+figure {
+	margin: 0px;
+	padding: 0px;
+}
+strong,b {
+	font-weight: 500;
+}
+i {
+	font-style: normal;
+}
+
+/* 테블릿 해상도 */
+@media all and (max-width: 1138px) {
+	h1,h2 {
+		font-size: 24px;
+	}
+	h3 {
+		font-size: 20px;
+	}
+	h4 {
+		font-size: 18px;
+	}
+	input,button,select,textarea {
+		font-size: 13px;
+	}
+}
+
+/* 모바일 해상도 */
+@media all and (max-width: 710px) {
+	h1,h2 {
+		font-size: 20px;
+	}
+	h3 {
+		font-size: 18px;
+	}
+	h4 {
+		font-size: 16px;
+	}
+	time {
+		font-size: 12px;
+	}
+}
+
+/* 크롬 사파리에만 CSS 적용 */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	select {
+		background: url(../images/template/bullet_webkit_select.png) no-repeat right center;
+	}
+}

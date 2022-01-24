@@ -1,0 +1,487 @@
+﻿@charset 'utf-8';
+
+/* 검색 
+**************************************************/
+/* 검색결과 */
+.search .search_result .inner {
+	padding-top: 20px;
+}
+.search_result h2 {
+	font-size: 16px;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+.search_result h2 strong {
+	font-weight: 700;
+	position: relative;
+}
+.search_result h2 strong::before {
+	content: "";
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 8px;
+	border-radius: 5px;
+	background-color: #D2D7FF;
+	display: block;
+}
+.search_result h2 span {
+	position: relative;
+}
+.search_result .result_box {
+	background-color: #fff;
+	border-radius: 20px;
+	padding: 20px 30px;
+}
+.search_result .result_box + .result_box {
+	margin-top: 40px;
+}
+.search_result .result_box .header {
+	position: relative;
+}
+.search_result .result_box .header .tit {
+	position: relative;
+	padding-left: 63px;
+}
+.search_result .result_box .header .tit::before {
+	content: "";
+	width: 71px;
+	height: 71px;
+	background-repeat: no-repeat;
+	background-size: 71px 71px;
+	position: absolute;
+	left: -10px;
+	top: -10px;
+}
+.search_result .result_box.patent .header .tit::before {
+	background-image: url(../images/template/ico_patent.png);
+}
+.search_result .result_box.legal .header .tit::before {
+	background-image: url(../images/template/ico_legal.png);
+}
+.search_result .result_box.portal .header .tit::before {
+	display: none;
+}
+.search_result .result_box .header .tit h3 {
+	font-size: 20px;
+}
+.search_result .result_box .header .tit span {
+	color: #B7C4BD;
+}
+.search_result .result_box.portal .header .tit span {
+	background-color: #E2EFFF;
+	position: absolute;
+	color: #378EFF;
+	left: 0;
+	top: 2px;
+	padding: 2px 13px;
+	border-radius: 5px;
+	font-weight: 600;
+	font-size: 16px;
+} 
+.search_result .result_box p.desc {
+	display: none;
+}
+.search_result .result_box .cont ul li:first-child {
+	margin-top: 20px;
+}
+.search_result .result_box .cont ul li {
+	margin-top: 10px;
+}
+.search_result .result_box .cont ul li a {
+	display: block;
+	border-radius: 10px;
+	padding: 30px 20px;
+	border: 1px solid #E5E5E8;
+}
+.search_result .result_box .cont ul li a:hover {
+	border-color: #3791FF;
+	background-color: #FBFCFF;
+}
+.search_result .result_box .cont ul li a h4 {
+	font-size: 16px;
+	font-weight: 700;
+}
+.search_result .result_box .cont ul li a:hover h4 {
+	color: #3791FF;
+}
+.search_result .result_box .cont ul li a p {
+	font-size: 14px;
+	color: #B7BDC4;
+	margin-top: 14px;
+}
+.search_result .result_box .btn_more {
+	text-align: center;
+	width: 100%;
+}
+.search_result .result_box .btn_more a {
+	display: inline-block;
+	margin-top: 10px;
+	padding: 12px 80px 12px 24px;
+	background-color: #378EFF;
+	color: #fff;
+	border-radius: 5px;
+	position: relative;
+}
+.search_result .result_box .btn_more a::after {
+	content: "";
+	position: absolute;
+	width: 8px;
+	height: 13px;
+	background: url("../images/template/ico_more.png") no-repeat center center / 8px 13px;
+	top: 0;
+	bottom: 0;
+	right: 24px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+/* 검색 결과 상세 */
+.detail_lnb {
+	margin-top: -6px;
+}
+.detail_lnb ul {
+	display: flex;
+    max-width: 1240px;
+    margin: 0 auto;
+	padding-bottom: 20px;
+}
+.detail_lnb ul li {
+	margin-left: 8px;
+}
+.detail_lnb ul li:first-child {
+	margin-left: 0;
+}
+.search_info {
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: flex;
+	align-items: center;
+}
+.search_info .result_txt {
+	margin-right: 10px;
+	order: 1;
+}
+.search_info .result_txt .total_count {
+	font-weight: 700;
+}
+
+/* 법령, 특허정보 사이트 맵 
+**************************************************/
+/* 사이트맵 리스트 */
+.site_map_wrap ul.map_box > li + li {
+	margin-top: 30px;
+}
+.site_map_wrap ul.map_box > li > h3 {
+	font-size: 18px;
+	position: relative;
+	padding-left: 26px;
+	margin-bottom: 16px;
+}
+.site_map_wrap ul.map_box > li > h3::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin-top: auto;
+	margin-bottom: auto;
+	left: 0;
+	width: 8px;
+	height: 8px;
+	border: 4px solid #6DA4FF;
+	border-radius: 50%;
+}
+.site_map_wrap ul.map_list {
+	margin-left: -1%;
+	margin-right: -1%;
+}
+.site_map_wrap ul.map_list::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+.site_map_wrap ul.map_list > li {
+	float: left;
+	margin-left: 1%;
+	margin-right: 1%;
+	width: 23%;
+	box-sizing: border-box;
+}
+.site_map_wrap ul.map_list > li:nth-child(n+5) {
+	margin-top: 1%;
+}
+.site_map_wrap ul.map_list > li > a {
+	display: block;
+	padding: 18px 10px 18px 42px;
+	background-color: #F4F6FA;
+	border: 1px solid #E4EAF6;
+	border-radius: 10px;
+	position: relative;
+}
+.site_map_wrap ul.map_list > li > a:hover {
+	background-color: #fff;
+	box-shadow: 0px 0px 5px 0px #0000001a;
+}
+.site_map_wrap ul.map_list > li > a::before,
+.site_map_wrap ul.map_list > li > a::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin-top: auto;
+	margin-bottom: auto;
+	background-repeat: no-repeat;
+}
+.site_map_wrap ul.map_list > li > a::before {
+	left: 10px;
+	width: 18px;
+	height: 22px;
+	background-size: 18px auto;
+}
+.site_map_wrap ul.map_list.patent > li > a::before {
+	background-image: url("../images/template/bullet_patent.png");
+}
+.site_map_wrap ul.map_list.patent > li > a:hover::before {
+	background-image: url("../images/template/bullet_patent_on.png");
+}
+.site_map_wrap ul.map_list.law > li > a::before {
+	background-image: url("../images/template/bullet_law.png");
+}
+.site_map_wrap ul.map_list.law > li > a:hover::before {
+	background-image: url("../images/template/bullet_law_on.png");
+}
+.site_map_wrap ul.map_list > li > a::after {
+	right: 15px;
+	width: 13px;
+	height: 13px;
+	background-image: url("../images/template/bullet_site_more.png");
+	background-size: 13px 13px;
+	transition: 0.3s;
+}
+.site_map_wrap ul.map_list > li > a:hover::after {
+	background-image: url("../images/template/bullet_site_more_on.png");
+	-webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+	transform: rotate(180deg);
+	transition: 0.3s;
+}
+
+/* 사이트 맵 Layer Popup */
+.layer_popup {
+	display: none;
+	position: fixed;
+	top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 104;
+    background-color: rgba(0,0,0,0.6);
+}
+.layer_popup .inner {
+	display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.layer_popup .inner .layer_content {
+	display: inline-block;
+	position: relative;
+	box-sizing: border-box;
+	padding: 24px 30px;
+	max-height: 500px;
+	min-width: 720px;
+	max-width: 1020px;
+	min-height: 100px;
+	border-radius: 15px;
+	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+	background-color: white;
+	text-align: left;
+	overflow: auto;
+}
+.layer_popup .title {
+	position: relative;
+	z-index: 2;
+	line-height: 120%;
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	font-weight: bold;
+	box-sizing: border-box;
+	border-bottom: 1px solid #E8E5E5;
+}
+.layer_popup .title h3 {
+	font-size: 20px;
+}
+.layer_popup .cont {
+	padding: 20px 0 20px ;
+}
+.layer_popup .cont ul {
+	margin-left: -10px;
+}
+.layer_popup .cont ul::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.layer_popup .cont ul li {
+	float: left;
+    padding: 18px 28px;
+    background-color: #F4F6FA;
+    border: 1px solid #E4EAF6;
+    border-radius: 10px;
+	box-sizing: border-box;
+	width: calc(50% - 10px);
+	margin-left: 10px;
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+	font-weight: 500;
+}
+.layer_popup .cont ul li:nth-child(n+3) {
+	margin-top: 10px;
+}
+.layer_popup .cont ul li a.site_link {
+	text-align: right;
+}
+.layer_popup button.btn_close {
+	position: absolute;
+	z-index: 3;
+	top: 16px;
+	right: 21px;
+	width: 20px;
+	height: 20px;
+}
+.layer_popup button.btn_close img {
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 12px;
+	height: 12px;
+}
+
+
+/* 노트북 해상도 */
+@media all and (max-width: 1296px) {
+	/* 검색 결과 */
+	.search .content .inner {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.search_result h2 {
+		padding-left: 15px;
+	}
+	.search_result .result_box {
+		padding: 20px 15px;
+		border-radius: 0;
+	}
+}
+
+/* 타블렛 해상도 */
+@media all and (max-width: 1138px) {
+	/* 검색 결과 */
+	.search_result .result_box + .result_box {
+		margin-top: 12px;
+	}
+	.search_result .result_box .header p.desc {
+		padding-top: 15px;
+		display: block;
+		color: #6E749D;
+	}
+	.search_result .result_box .header .tit h3 {
+		font-size: 18px;
+	}
+	.search_result .result_box.portal .header .tit span {
+		top: 1px;
+		font-size: 14px;	
+	}
+	.search_result .result_box .cont ul li:first-child {
+		margin-top: 17px;
+	}
+	.search_result .result_box .cont ul li a p {
+		overflow: hidden;
+		line-height: 1.4em;
+		height: 4.2em;
+		white-space: normal;
+	}
+	.search_result .result_box .cont ul li a {
+		padding: 20px;
+	}
+
+	/* 검색결과 상세 */
+	.detail_lnb {
+		overflow: hidden;
+		overflow-x: auto;
+	}
+	.detail_lnb ul {
+		width: 355px;
+		white-space: nowrap;
+		margin-left: 15px;
+	}
+	.search_info {
+		margin-top: 15px;
+		position: static;
+		top: auto;
+		right: auto;
+		flex-direction: column;
+		width: 100%;
+		align-items: flex-start;
+	}
+	.search_info .site_link {
+		width: 100%;
+		box-sizing: border-box;
+		order: 1;
+	}
+	.search_info .result_txt {
+		margin-top: 15px;
+		margin-bottom: -10px;
+		order: 2;
+	}
+
+	/* 사이트 맵 */
+	.site_map_wrap ul.map_list > li {
+		width: 48%;
+	}
+	.site_map_wrap ul.map_list > li:nth-child(n+3) {
+		margin-top: 1%;
+	}
+}
+
+/* 모바일 해상도 */
+@media all and (max-width: 710px) {
+	/* 사이트 맵 */
+	.site_map_wrap ul.map_list {
+		margin: 0;
+	}
+	.site_map_wrap ul.map_list > li {
+		width: 100%;
+		margin: 0;
+	}
+	.site_map_wrap ul.map_list > li:nth-child(n+2) {
+		margin-top: 1%;
+	}
+	.site_map_wrap ul.map_box > li > h3 {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	.layer_popup .inner .layer_content {
+		min-height: 100%;
+		min-width: 100%;
+		border-radius: 0;
+		position: fixed;
+		top: 0;
+		left: 0;
+		overflow: auto;
+	}
+	.layer_popup .cont ul {
+		margin-left: 0;
+	}
+	.layer_popup .cont ul li {
+		width: 100%;
+		margin: 0;
+	}
+	.layer_popup .cont ul li:nth-child(n+2) {
+		margin-top: 10px;
+	}
+}

@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="kr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>LegalTech VDR</title>
+<link rel="stylesheet" href="../inc/css/swiper.min.css">
+<link rel="stylesheet" href="../inc/css/import.css" />
+<script src="../inc/js/jquery-1.12.4.min.js"></script>
+<script src="../inc/js/swiper.min.js"></script>
+<script src="../inc/js/script.js"></script>
+</head>
+<body class="main">
+<div id="header_wrap">
+	<header id="header">
+		<div class="inner">
+			<!-- Logo -->
+			<h1><a class="defult" href="index.html"><img src="../inc/images/layout/logo_symbol.png" alt="LegalTech" /></a><a class="scroll" href="index.html"><img src="../inc/images/layout/logo_sub.png" alt="LegalTech VDR" /></a></h1>
+			<!-- //Logo -->
+			<!-- Navigation -->
+			<nav id="gnb">
+				<h2 class="blind">네비게이션 메뉴</h2>
+				<ul>            
+					<li>
+						<a href="#">뉴스</a>
+					</li>
+					<li>
+						<a href="#">위키</a>
+					</li>
+					<li>
+						<a href="#">법령, 특허정보 사이트 맵</a>
+					</li>
+					<li>
+						<a href="#">법무, 특허법인 위치</a>
+					</li>
+					<li class="link">
+						<a href="https://legaltech.co.kr/" target="_blank" title="새 창 열림">리걸테크</a>
+					</li>
+				</ul>
+			</nav>
+			<button type="button" class="btn_gnb_m"><i>메뉴 열기</i></button>
+			<button type="button" class="btn_search_m"><i>검색</i></button>
+			<!-- //Navigation -->
+			<!-- Search -->
+			<div class="header_search">
+				<fieldset class="search_basic">
+					<legend class="blind">검색</legend>
+					<span class="searchBox">
+						<input type="text" id="" class="search_input" placeholder=" 특허, 법률 키워드를 검색해주세요.">
+						<label for="" class="select_type down" id="">
+							전체
+						</label>
+						<button type="submit" class="btn_search" title="검색">
+							<span class="blind">검색</span>
+							<span class="ico_search_submit"></span>
+						</button>
+					</span>
+					<!-- 검색 종류 선택 -->
+					<div class="select_type_list">
+						<ul>
+							<li>
+								<label for="" data-label="전체">전체
+									<input id="" type="checkbox" checked="checked">
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label for="" data-label="법률">법률
+									<input id="" type="checkbox" checked="checked">
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label for="" data-label="특허">특허
+									<input id="" type="checkbox">
+									<span class="checkmark"></span>
+								</label>
+							</li>
+						</ul>
+					</div>
+					<!-- //검색 종류 선택 -->
+				</fieldset>
+			</div>
+			<!-- //Search -->
+			<!-- Rolling Ranking -->
+			<div class="header_ranking">
+				<h2 class="blind">금주 인기 키워드</h2>
+				<div class="rolling_ranking">
+					<div class="swiper-container swiperHdRoll">
+						<ul class="swiper-wrapper ranking_item_list">
+							<li class="swiper-slide">
+								<a href="#"><span>1</span>야호</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#"><span>2</span>야dd호</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#"><span>3</span>야dd호</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#"><span>4</span>d야호</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#"><span>5</span>야호dd</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- //Rolling Ranking -->
+			<!-- Ranking Box -->
+			<div class="ranking_box ranking tabbox">
+				<div class="tit">
+					<h2>금주 인기 키워드</h2>
+					<ul class="tab">
+						<li class="active"><a href="javascript:void(0);">법률</a></li>
+						<li><a href="javascript:void(0);">특허</a></li>
+					</ul>
+				</div>
+				<div class="tab_cont0 tab_cont">
+					<ul class="ranking_item_list">
+						<li><a href="#"><span>1</span>노후 임대차 계약</a></li>
+						<li><a href="#"><span>2</span>인터넷 모욕</a></li>
+						<li><a href="#"><span>3</span>명예훼손</a></li>
+						<li><a href="#"><span>4</span>국제물품</a></li>
+						<li><a href="#"><span>5</span>증거금</a></li>
+					</ul>
+				</div>
+				<div class="tab_cont1 tab_cont">
+					<ul class="ranking_item_list">
+						<li><a href="#"><span>1</span>test</a></li>
+						<li><a href="#"><span>2</span>test</a></li>
+						<li><a href="#"><span>3</span>test</a></li>
+						<li><a href="#"><span>4</span>test</a></li>
+						<li><a href="#"><span>5</span>test</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- //Ranking Box -->
+		</div>
+	</header>
+</div>
+
+<hr />
+
+<div id="main_search">
+	<!-- 메인 상단 검색 -->
+	<h2>
+		<a href="/">
+			<span class="blind">legaltech</span>
+		</a>
+		<p><span>법률</span><span>특허검색</span>을 함께 제공하는 <span>유일한 플랫폼</span></p>
+	</h2>
+	<fieldset class="search_basic">
+		<legend class="blind">검색</legend>
+		<span class="searchBox">
+			<input type="text" id="" class="search_input" placeholder="검색하고 싶은 특허 혹은 법률 관련 키워드를 입력해주세요.">
+			<label for="" class="select_type down" id="">
+				전체
+			</label>
+			<button type="submit" class="btn_search" title="검색">
+				<span class="blind">검색</span>
+				<span class="ico_search_submit"></span>
+			</button>
+		</span>
+		<!-- 검색 종류 선택 -->
+		<div class="select_type_list">
+			<ul>
+				<li>
+					<label for="" data-label="전체">전체
+						<input id="" type="checkbox" checked="checked">
+						<span class="checkmark"></span>
+					</label>
+				</li>
+				<li>
+					<label for="" data-label="법률">법률
+						<input id="" type="checkbox" checked="checked">
+						<span class="checkmark"></span>
+					</label>
+				</li>
+				<li>
+					<label for="" data-label="특허">특허
+						<input id="" type="checkbox">
+						<span class="checkmark"></span>
+					</label>
+				</li>
+			</ul>
+		</div>
+		<!-- //검색 종류 선택 -->
+	</fieldset>
+	<!-- //메인 상단 검색 -->
+</div>
+
+<div id="container">
+	<div class="content main_top_cont">
+		<div class="inner">
+			<!-- Left : 뉴스 모바일 반응형 슬라이드 -->
+			<div class="main_news">
+				<h2 class="blind">최신 뉴스</h2>
+				<div class="list swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide layout_left">
+							<a href="#">
+								<span class="thumb">
+									<img src="../inc/images/photo/01.jpg" alt="">
+								</span>
+								<div class="txt">
+									<span class="cate">최신뉴스</span>
+									<strong class="tit">자전거 사고의 배상은 안외 고액! 회사가 가정해야 할 사항</strong>
+									<span class="info"><i>법률</i><time>20221.08.09</time>
+									</span>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide layout_right top">
+							<a href="#">
+								<span class="thumb">
+									<img src="../inc/images/photo/02.jpg" alt="">
+								</span>
+								<div class="txt">
+									<span class="cate">최신뉴스</span>
+									<strong class="tit">자전거 사고의 배상은 안외 고액! 회사가 가정해야 할 사항</strong>
+									<span class="info"><i>법률</i><time>20221.08.09</time>
+									</span>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide layout_right btm">
+							<a href="#">
+								<span class="thumb">
+									<img src="../inc/images/photo/04.jpg" alt="">
+								</span>
+								<div class="txt">
+									<span class="cate">최신뉴스</span>
+									<strong class="tit">자전거 사고의 배상은 안외 고액! 회사가 가정해야 할 사항</strong>
+									<span class="info"><i>법률</i><time>20221.08.09</time>
+									</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //Left -->
+			<!-- Right : 금주 키워드, 위치조회, 사이트맵 -->
+			<div class="main_right">
+				<!-- 인기 키워드 -->
+				<div class="main ranking tabbox">
+					<div class="tit">
+						<h2>금주 인기 키워드</h2>
+						<ul class="tab">
+							<li class="active"><a href="javascript:void(0);">법률</a></li>
+							<li><a href="javascript:void(0);">특허</a></li>
+						</ul>
+					</div>
+					<div class="tab_cont0 tab_cont">
+						<ul class="ranking_item_list">
+							<li><a href="#"><span>1</span>노후 임대차 계약</a></li>
+							<li><a href="#"><span>2</span>인터넷 모욕</a></li>
+							<li><a href="#"><span>3</span>명예훼손</a></li>
+							<li><a href="#"><span>4</span>국제물품</a></li>
+							<li><a href="#"><span>5</span>증거금</a></li>
+						</ul>
+					</div>
+					<div class="tab_cont1 tab_cont">
+						<ul class="ranking_item_list">
+							<li><a href="#"><span>1</span>test</a></li>
+							<li><a href="#"><span>2</span>test</a></li>
+							<li><a href="#"><span>3</span>test</a></li>
+							<li><a href="#"><span>4</span>test</a></li>
+							<li><a href="#"><span>5</span>test</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- //인기 키워드 -->
+				<!-- 바로가기 메뉴 -->
+				<div class="direct">
+					<h2 class="blind">서비스 바로가기</h2>
+					<div class="location">
+						<a href="#">
+							<div class="thumb">
+								<img src="../inc/images/main/img_location.png" alt="">
+							</div>
+							<div class="txt">
+								<h3>법무법인, 특허법인 위치 조회</h3>
+								<p>내 근처 법무법인, 특허법인 검색</p>
+							</div>
+						</a>
+					</div>
+					<div class="site_map">
+						<a href="#">
+							<div class="thumb">
+								<img src="../inc/images/main/img_site_map.png" alt="">
+							</div>
+							<div class="txt">
+								<h3>법령, 특허정보 사이트 맵</h3>
+								<p>법령, 특허정보 사이트들을 한눈에</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<!-- //바로가기 메뉴 -->
+			</div>
+			<!-- //Right -->
+		</div>
+	</div>
+	<div class="content grey">
+		<div class="inner">
+			<!-- 최신 위키 -->
+			<div class="wiki">
+				<h2 class="cont_tit">최신 위키</h2>	
+				<div class="swiper-container swiperWiki">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide slide_wrap">
+							<ul>
+								<li>
+									<a href="#">
+										<span class="thumb">
+											<img src="../inc/images/photo/01.jpg" alt="">
+										</span>
+										<div class="txt">
+											<strong class="tit">표준 문자 상표로서 등록할 수 있는 
+												문자·기호는?</strong>
+											<span class="info"><i>법률</i><time>20221.08.09</time>
+											</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="thumb">
+											<img src="../inc/images/photo/02.jpg" alt="">
+										</span>
+										<div class="txt">
+											<strong class="tit">발전용 ‘가스터빈’ 특허 경쟁 시작됐다… 진격의 ‘두산중공업’</strong>
+											<span class="info"><i>법률</i><time>20221.08.09</time>
+											</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="thumb">
+											<img src="../inc/images/photo/03.jpg" alt="">
+										</span>
+										<div class="txt">
+											<strong class="tit">연구 임상 기밀데이터, 라이선스 인아웃 보안유지 필수</strong>
+											<span class="info"><i>법률</i><time>20221.08.09</time>
+											</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="thumb">
+											<img src="../inc/images/photo/04.jpg" alt="">
+										</span>
+										<div class="txt">
+											<strong class="tit">코로나 이후 대비 선제적 투자로 첨단 IT산업 M&A 가속화 추세</strong>
+											<span class="info"><i>법률</i><time>20221.08.09</time>
+											</span>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="swiper-slide slide_wrap">
+							<ul>
+								<li>
+									<a href="#">
+										<span class="thumb">
+											<img src="../inc/images/photo/04.jpg" alt="">
+										</span>
+										<div class="txt">
+											<strong class="tit">표준 문자 상표로서 등록할 수 있는 
+												문자·기호는?</strong>
+											<span class="info"><i>법률</i><time>20221.08.09</time>
+											</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="thumb">
+											<img src="../inc/images/photo/03.jpg" alt="">
+										</span>
+										<div class="txt">
+											<strong class="tit">발전용 ‘가스터빈’ 특허 경쟁 시작됐다… 진격의 ‘두산중공업’</strong>
+											<span class="info"><i>법률</i><time>20221.08.09</time>
+											</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="thumb">
+											<img src="../inc/images/photo/05.jpg" alt="">
+										</span>
+										<div class="txt">
+											<strong class="tit">연구 임상 기밀데이터, 라이선스 인아웃 보안유지 필수</strong>
+											<span class="info"><i>법률</i><time>20221.08.09</time>
+											</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="thumb">
+											<img src="../inc/images/photo/01.jpg" alt="">
+										</span>
+										<div class="txt">
+											<strong class="tit">코로나 이후 대비 선제적 투자로 첨단 IT산업 M&A 가속화 추세</strong>
+											<span class="info"><i>법률</i><time>20221.08.09</time>
+											</span>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="btn_wrap">
+						<div class="swiper_index">
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //최신 위키 -->
+			<!-- 광고 배너 영역 -->
+			<div class="banner">
+				<div class="swiper-container swiperBanner">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide thumb">
+							<a href="#">
+								<img class="pc" src="../inc/images/main/banner_01.png" alt="기업용 클라우드 스토리지 리걸테크 IDX - 기업 내외부 업무자료 공유, 안정적인 백업,복원, 동기화">
+								<img class="mobile" src="../inc/images/main/mobile_banner_01.png" alt="기업용 클라우드 스토리지 리걸테크 IDX - 기업 내외부 업무자료 공유, 안정적인 백업,복원, 동기화">
+							</a>
+						</div>
+						<div class="swiper-slide thumb">
+							<a href="#">
+								<img class="pc" src="../inc/images/main/banner_01.png" alt="기업용 클라우드 스토리지 리걸테크 IDX - 기업 내외부 업무자료 공유, 안정적인 백업,복원, 동기화">
+								<img class="mobile" src="../inc/images/main/mobile_banner_01.png" alt="기업용 클라우드 스토리지 리걸테크 IDX - 기업 내외부 업무자료 공유, 안정적인 백업,복원, 동기화">
+							</a>
+						</div>
+						<div class="swiper-slide thumb">
+							<a href="#">
+								<img class="pc" src="../inc/images/main/banner_01.png" alt="기업용 클라우드 스토리지 리걸테크 IDX - 기업 내외부 업무자료 공유, 안정적인 백업,복원, 동기화">
+								<img class="mobile" src="../inc/images/main/mobile_banner_01.png" alt="기업용 클라우드 스토리지 리걸테크 IDX - 기업 내외부 업무자료 공유, 안정적인 백업,복원, 동기화">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<!-- //광고 배너 영역 -->
+		</div>
+	</div>
+	<div class="content gradient">
+		<div class="inner">
+			<!-- 사업소개 -->
+			<div class="intro_bsns tabbox">
+				<div class="tit">
+					<h2 class="cont_tit">사업 소개</h2>
+					<ul class="tab">
+						<li class="active"><a href="javascript:void(0);"><span>법률</span><strong>LegalSearch</strong></a></li>
+						<li><a href="javascript:void(0);"><span>특허</span><strong>PatentSearch</strong></a></li>
+					</ul>
+				</div>
+				<!-- 리걸테크 -->
+				<div class="tab_cont0 tab_cont legal">
+					<ul>
+						<li>
+							<div class="txt">
+								<h3><span>지능형 법률검색</span><br> 서비스는 뭔가요?</h3>
+								<p>지금까지의 검색서비스는 단어의 일치 여부로 <br>검색 결과를 제공해주는 키워드 중심의 검색이었습니다.</p>
+								<p>리걸서치는 단어의 중요도를 설정하여 <br>사용자가 원하는 문서에 더 빠르게 접근할 수 있는 <br>'중요도 설정'기능을 제공합니다.</p>
+							</div>
+						</li>
+						<li>
+							<div class="txt">
+								<h3>About<br> <span>LegalSearch</span><br></h3>
+								<p>지금까지의 검색서비스는 단어의 일치 여부로 <br>검색 결과를 제공해주는 키워드 중심의 검색이었습니다.</p>
+								<p>리걸서치는 단어의 중요도를 설정하여 <br>사용자가 원하는 문서에 더 빠르게 접근할 수 있는 <br>'중요도 설정'기능을 제공합니다.</p>
+							</div>
+						</li>
+						<li>
+							<div class="txt">
+								<h3>리걸서치는 <span>‘판례체계도’를</span> <br>제공합니다.</h3>
+								<p>리걸서치는 단순한 판례의 검색을 넘어서 <br>해당 판례의 맥락 정보, 히스토리 정보, 연결된 정보를 <br>보여주는 '판례체계도'를 제공합니다.</p>
+								<p>이를 통해 개별적 판례 검색이 아닌 판례와 판례와 관계, <br>판례와 조문의 관계를 보다 쉽게 파악 할 수 있습니다.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- //리걸테크 -->
+				<!-- 페이턴트 서치 -->
+				<div class="tab_cont1 tab_cont patent">
+					<ul>
+						<li>
+							<div class="txt">
+								<h3>지재권 내용확인에 <span><br>
+									최적화 된 UI를 </span>제공합니다</h3>
+								<p>각각의 지재권을 구역에 따라 나누어 사용자가 필요한 사항만을 빠르게 파악할 수 있도록 구성했습니다.</p>
+								<p>PatentSearch를 이용하여 리서칭을 수행하면 
+									다른 서비스보다 빠른 리서칭 수행이 가능합니다.</p>
+							</div>
+						</li>
+						<li>
+							<div class="txt">
+								<h3>About<br> <span>PatentSearch</span><br></h3>
+								<p>PatentSearch 는 국내 유일 특허, 디자인, 상표, 지재관련 심판을 한번에 검색할 수 잇는 지재검색 플랫폼입니다.</p>
+								<p>향후 PCT, 해외특허 검색등을 지속적으로 업데이트 하여 국내,외 모든 지재권을 비교, 검색할 수 있는 서비스로 거듭날 예정입니다.</p>
+							</div>
+						</li>
+						<li>
+							<div class="txt">
+								<h3><span>권리변동 현황은 </span><br>무엇인가요?</h3>
+								<p>권리변동현황은 현재 보고있는 지재권의 주요 권리변동 현황을 분석하여 시각화 한 것입니다.</p>
+								<p>사용자 분들께서는 권리변동 현황 그래프를 통해 현재 보고있는 지재권의 권리변동 이력을 손쉽게 파악 가능합니다.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- //페이턴트 서치 -->
+			</div>
+			<!-- //사업소개 -->
+		</div>
+	</div>
+	<script type="text/javascript">
+		//header
+		initMainHeader();
+
+		//GNB
+		initGnb(0);
+
+		//슬라이드 : 최신뉴스 반응형
+		initRspNews();
+
+		//슬라이드 : 위키
+		initWiki();
+
+		//슬라이드 : 배너
+		initBanner();
+	</script>
+</div>
+
+<hr />
+
+<footer id="footer">
+	<h2 class="blind">사이트 정보</h2>
+	<div class="foot_menu">
+		<ul>
+			<li><a href="https://legaltech.co.kr/">회사소개</a></li>
+			<li><a href="/guide/use_terms">이용약관</a></li>
+			<li><a href="/guide/personal_privacy">개인정보처리방침</a></li>
+		</ul>
+	</div>
+	<div class="inner">
+		<ul class="company_info">
+			<li><a href="http://legaltech.kr/ko/" target="_blank" title="새 창 열림">리걸테크(주)</a></li>
+			<li>
+				<span>대표이사 : 정인호</span>
+				<span>사업자등록번호 : 853-86-00261</span>
+				<span>통신판매업번호: 2017-서울강남-03486</span>
+				<address>서울특별시 강남구 언주로 709, 4층(논현동,송암빌딩) (우)06053</address>
+				<span>전화 : 02-562-5055</span>
+				<span>팩스 : 02-563-5055</span>
+				<span>이메일 : <a href="mailto:info@legaltech.kr">info@legaltech.kr</a></span>
+			</li>
+			<li class="copyright">Copyright (c) 2021 Legaltech. All Rights Reserved.</li>
+			<li>면책사항 : 특허와 관련된 정보 및 인용 · 통계 · 분석 정보는 LegalTech 고유의 집계 알고리즘에 기초하고 있으며, LegalTech는 위 정보 데이터에 대한 오류나 결함에 대해 보증하지 않습니다.</li>
+		</ul>
+		<div class="family_site">
+			<a href="javascript:void(0)" class="link">Family Site</a>
+			<ul>
+				<li><a href="https://patentsearch.kr/" target="_blank" title="새 창 열림">PatentSearch</a></li>
+				<li><a href="https://legalsearch.kr/" target="_blank" title="새 창 열림">LegalSearch</a></li>
+			</ul>
+		</div>
+		<ul class="sns">
+			<li>
+				<a href="https://blog.naver.com/legaltechcorp" target="_blank" title="새 창 열림">
+					<img src="../inc/images/layout/ico_blog.png" alt="naver blog" class="naverblog">
+				</a>
+			</li>
+			<li>
+				<a href="https://www.youtube.com/channel/UCyPQij8t8LGyNAF0QGciFyA" target="_blank" title="새 창 열림">
+					<img src="../inc/images/layout/ico_youtube.png" alt="youtube" class="youtube">
+				</a>
+			</li>
+		</ul>
+	</div>
+</footer>
+
+<div class="modal_bg"></div>
+</body>
+</html>
