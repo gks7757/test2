@@ -95,16 +95,9 @@
 	padding: 30px 20px;
 	border: 1px solid #E5E5E8;
 }
-.search_result .result_box .cont ul li a:hover {
-	border-color: #3791FF;
-	background-color: #FBFCFF;
-}
 .search_result .result_box .cont ul li a h4 {
 	font-size: 16px;
 	font-weight: 700;
-}
-.search_result .result_box .cont ul li a:hover h4 {
-	color: #3791FF;
 }
 .search_result .result_box .cont ul li a p {
 	font-size: 14px;
@@ -254,27 +247,6 @@
 	transition: 0.3s;
 }
 
-@media (hover: hover) {
-	.site_map_wrap ul.map_list > li > a:hover {
-		background-color: #fff;
-		box-shadow: 0px 0px 5px 0px #0000001a;
-	}
-	.site_map_wrap ul.map_list.patent > li > a:hover::before {
-		background-image: url("../images/template/bullet_patent_on.png");
-	}
-	.site_map_wrap ul.map_list.law > li > a:hover::before {
-		background-image: url("../images/template/bullet_law_on.png");
-	}
-	.site_map_wrap ul.map_list > li > a:hover::after {
-		background-image: url("../images/template/bullet_site_more_on.png");
-		-webkit-transform: rotate(180deg);
-		-moz-transform: rotate(180deg);
-		-ms-transform: rotate(180deg);
-		-o-transform: rotate(180deg);
-		transform: rotate(180deg);
-		transition: 0.3s;
-	}
-}
 
 /* 사이트 맵 Layer Popup */
 .layer_popup {
@@ -368,6 +340,38 @@
 }
 
 
+@media (hover: hover) {
+	/* 검색 결과 */
+	.search_result .result_box .cont ul li a:hover {
+		border-color: #3791FF;
+		background-color: #FBFCFF;
+	}
+	.search_result .result_box .cont ul li a:hover h4 {
+		color: #3791FF;
+	}
+
+	/* 사이트 맵 */
+	.site_map_wrap ul.map_list > li > a:hover {
+		background-color: #fff;
+		box-shadow: 0px 0px 5px 0px #0000001a;
+	}
+	.site_map_wrap ul.map_list.patent > li > a:hover::before {
+		background-image: url("../images/template/bullet_patent_on.png");
+	}
+	.site_map_wrap ul.map_list.law > li > a:hover::before {
+		background-image: url("../images/template/bullet_law_on.png");
+	}
+	.site_map_wrap ul.map_list > li > a:hover::after {
+		background-image: url("../images/template/bullet_site_more_on.png");
+		-webkit-transform: rotate(180deg);
+		-moz-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+		transform: rotate(180deg);
+		transition: 0.3s;
+	}
+}
+
 /* 노트북 해상도 */
 @media all and (max-width: 1296px) {
 	/* 검색 결과 */
@@ -397,6 +401,9 @@
 	}
 	.search_result .result_box .header .tit h3 {
 		font-size: 18px;
+	}
+	.search_result .result_box .cont ul li a h4 {
+		font-weight: 500;
 	}
 	.search_result .result_box.portal .header .tit span {
 		top: 1px;

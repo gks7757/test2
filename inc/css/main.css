@@ -699,6 +699,7 @@
 	}
 	.intro_bsns .tab_cont ul li:nth-child(1) {
 		order: 2;
+		background-size: 362px auto;
 	}
 	.intro_bsns .tab_cont ul li:nth-child(2) {
 		margin-bottom: 0;

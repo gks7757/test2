@@ -618,7 +618,7 @@ a.site_link::after {
 	/* 게시판 공통 */
 	.board_wrap {
 		margin: 20px 0px 0px 0px;
-		padding: 20px 0;
+		padding: 20px 0 0;
 	}
 
 	/* 게시판 탑 리스트 */
