@@ -245,6 +245,7 @@
 	overflow: hidden;
 	position: relative;
 	margin-top: 16px;
+	isolation: isolate;
 }
 .direct > div h3 {
 	font-size: 18px;
