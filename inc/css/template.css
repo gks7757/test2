@@ -689,7 +689,11 @@ a.site_link::after {
 		padding: 20px 0;
 	}
 	.borard_view aside > div > ul li a {
-		padding-top: 5px;
+		padding: 14px 110px 6px 6px;
+	}
+	.borard_view aside > div > ul li .photo {
+		width: 94px;
+		height: 58px;
 	}
 
 

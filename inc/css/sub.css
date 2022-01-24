@@ -171,6 +171,9 @@
 /* 법령, 특허정보 사이트 맵 
 **************************************************/
 /* 사이트맵 리스트 */
+.site_map_wrap ul.map_box > li:first-child {
+	margin-top: 20px;
+}
 .site_map_wrap ul.map_box > li + li {
 	margin-top: 30px;
 }
@@ -220,10 +223,6 @@
 	border-radius: 10px;
 	position: relative;
 }
-.site_map_wrap ul.map_list > li > a:hover {
-	background-color: #fff;
-	box-shadow: 0px 0px 5px 0px #0000001a;
-}
 .site_map_wrap ul.map_list > li > a::before,
 .site_map_wrap ul.map_list > li > a::after {
 	content: "";
@@ -243,14 +242,8 @@
 .site_map_wrap ul.map_list.patent > li > a::before {
 	background-image: url("../images/template/bullet_patent.png");
 }
-.site_map_wrap ul.map_list.patent > li > a:hover::before {
-	background-image: url("../images/template/bullet_patent_on.png");
-}
 .site_map_wrap ul.map_list.law > li > a::before {
 	background-image: url("../images/template/bullet_law.png");
-}
-.site_map_wrap ul.map_list.law > li > a:hover::before {
-	background-image: url("../images/template/bullet_law_on.png");
 }
 .site_map_wrap ul.map_list > li > a::after {
 	right: 15px;
@@ -260,14 +253,27 @@
 	background-size: 13px 13px;
 	transition: 0.3s;
 }
-.site_map_wrap ul.map_list > li > a:hover::after {
-	background-image: url("../images/template/bullet_site_more_on.png");
-	-webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-	transform: rotate(180deg);
-	transition: 0.3s;
+
+@media (hover: hover) {
+	.site_map_wrap ul.map_list > li > a:hover {
+		background-color: #fff;
+		box-shadow: 0px 0px 5px 0px #0000001a;
+	}
+	.site_map_wrap ul.map_list.patent > li > a:hover::before {
+		background-image: url("../images/template/bullet_patent_on.png");
+	}
+	.site_map_wrap ul.map_list.law > li > a:hover::before {
+		background-image: url("../images/template/bullet_law_on.png");
+	}
+	.site_map_wrap ul.map_list > li > a:hover::after {
+		background-image: url("../images/template/bullet_site_more_on.png");
+		-webkit-transform: rotate(180deg);
+		-moz-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+		transform: rotate(180deg);
+		transition: 0.3s;
+	}
 }
 
 /* 사이트 맵 Layer Popup */
@@ -415,12 +421,12 @@
 		overflow-x: auto;
 	}
 	.detail_lnb ul {
-		width: 355px;
+		width: 360px;
 		white-space: nowrap;
 		margin-left: 15px;
 	}
 	.search_info {
-		margin-top: 15px;
+		margin-top: 10px;
 		position: static;
 		top: auto;
 		right: auto;
@@ -485,3 +491,4 @@
 		margin-top: 10px;
 	}
 }
+
