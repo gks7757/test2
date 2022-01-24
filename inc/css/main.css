@@ -379,6 +379,7 @@
 }
 .banner .thumb {
 	border-radius: 15px;
+	isolation: isolate;
 }
 .banner .thumb .mobile {
 	display: none;
@@ -584,6 +585,10 @@
 	.main .content .inner {
 		padding: 40px 15px;
 	}
+	.main h2.cont_tit {
+		margin-bottom: 20px;
+		text-align: center;
+	}
 
 	/* Content */
 	.main .main_top_cont .inner {
@@ -647,6 +652,15 @@
 	.main_right .direct {
 		padding: 0 15px;
 	}
+	.direct > div {
+		height: 110px;
+	}
+	.direct > div .txt {
+		padding: 30px 0 0px 24px;
+	}
+	.direct > div + div {
+		margin-top: 10px;
+	}
 
 	/* 위키 */
 	.wiki .slide_wrap ul {
@@ -665,6 +679,8 @@
 	.wiki .slide_wrap ul li .txt .tit {
 		font-size: 20px;
 	}
+
+
 
 }
 
@@ -752,7 +768,13 @@
 	.wiki .slide_wrap ul li .txt .tit {
 		font-size: 16px;
 	}
+	.wiki .btn_wrap {
+		margin: 20px 0 30px;
+	}
 	/* 배너 */
+	.banner .thumb {
+		border-radius: 10px;
+	}
 	.banner .thumb .pc {
 		display: none;
 	}
