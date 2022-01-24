@@ -331,6 +331,7 @@ a.site_link::after {
 	-webkit-box-orient: vertical;
 	line-height: 1.2em;
 	height: 2.4em;
+	isolation: isolate;
 }
 .board_top_list ul li a .photo {
 	position: absolute;

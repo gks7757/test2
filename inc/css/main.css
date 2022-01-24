@@ -283,6 +283,7 @@
 	height: 120px;
 	overflow: hidden;
 	border-radius: 10px;
+	isolation: isolate;
 }
 .wiki .slide_wrap ul li .txt {
 	position: relative;
