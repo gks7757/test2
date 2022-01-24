@@ -321,13 +321,18 @@ function initRspNews() {
 	function initSwiper() {
 	
 	  if (ww < 1280 && newsSwiper == undefined) {
-		newsSwiper = new Swiper(".main_news .swiper-container", {
-		  slidesPerView: 1,
-		  loop: true,
+		newsSwiper = new Swiper(".main_news .main_swiper", {
 		  autoplay: {
 			delay: 3000,
 			disableOnInteraction: false,
 		  },
+		  pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		  },
+		  slidesPerView: 1,
+		  loop: true,
+		  touchRatio: 0,
 		});
 	  } else if (ww >= 1280 && newsSwiper != undefined) {
 		newsSwiper.destroy();
@@ -376,7 +381,7 @@ function initWiki(){
 
 //슬라이드 : 배너
 function initBanner(){
-	var swiperBanner = new Swiper(".swiperBanner", {
+	var swiperBanner = new Swiper(".swiper_banner", {
 		pagination: {
 			el: ".swiper-pagination",
 			clickable: true,
