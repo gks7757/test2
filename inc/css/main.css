@@ -384,7 +384,7 @@
 .banner .thumb .mobile {
 	display: none;
 }
-.banner .swiper-pagination {
+.swiper-pagination {
 	position: absolute;
 	bottom: 10px;
 	left: 0;
@@ -602,6 +602,9 @@
 	}
 	.main .main_top_cont .main_right {
 		margin: 0;
+	}
+	.main_news {
+		position: relative;
 	}
 	.main_news .list {
 		border-radius: 0;
