@@ -321,18 +321,17 @@ function initRspNews() {
 	function initSwiper() {
 	
 	  if (ww < 1280 && newsSwiper == undefined) {
-		newsSwiper = new Swiper(".main_news .main_swiper", {
-		  autoplay: {
-			delay: 3000,
-			disableOnInteraction: false,
-		  },
-		  pagination: {
-			el: ".swiper-pagination",
-			clickable: true,
-		  },
-		  slidesPerView: 1,
-		  loop: true,
-		  touchRatio: 0,
+		newsSwiper = new Swiper(".main_swiper", {
+			slidesPerView: 1,
+			loop: true,
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
 		});
 	  } else if (ww >= 1280 && newsSwiper != undefined) {
 		newsSwiper.destroy();
@@ -342,7 +341,7 @@ function initRspNews() {
 	
 	initSwiper();
 	
-	$(window).on('resize', function () {
+	$(window).on('load resize', function () {
 	  ww = $(window).width();
 	  initSwiper();
 	});
