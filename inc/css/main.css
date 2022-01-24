@@ -245,7 +245,7 @@
 	overflow: hidden;
 	position: relative;
 	margin-top: 16px;
-	isolation: isolate;
+	z-index: 0;
 }
 .direct > div h3 {
 	font-size: 18px;
@@ -734,6 +734,9 @@
 		font-size: 20px;
 	}
 	/* 위키 */
+	.wiki .slide_wrap ul li {
+	    margin: 15px 0 0;
+	}
 	.wiki .slide_wrap ul li span.thumb {
 		width: 140px;
 		height: 86px;
@@ -764,6 +767,12 @@
 	.intro_bsns .tab_cont ul li h3::before,
 	.intro_bsns .tab_cont ul li h3::after {
 		right: auto;
+	}
+	.intro_bsns .tit ul.tab li a {
+		padding: 12px 0;
+	}
+	.intro_bsns .tit ul.tab li a strong {
+		font-size: 16px;
 	}
 
 }
