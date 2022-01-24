@@ -174,7 +174,7 @@ header#header nav#gnb > ul > li.link a:after {
 header#header .btn_gnb_m {
 	display: none;
 	position: absolute;
-    left: -13px;
+    left: -11px;
     top: 0;
 	width: 40px;
     height: 40px;
@@ -230,7 +230,7 @@ header#header .btn_gnb_m.on i:after{
 .btn_search_m {
 	display: none;
 	position: absolute;
-    right: 0;
+    right: -8px;
     top: 0;
 	width: 40px;
     height: 40px;
@@ -628,9 +628,11 @@ footer#footer ul.sns li a img.naverblog {
 	}
 
 	/* Footer */
-	footer#footer .foot_menu,
-	footer#footer .inner {
+	footer#footer .foot_menu {
 		padding: 0 15px;
+	}
+	footer#footer .inner {
+		padding: 10px 15px;
 	}
 	footer#footer .foot_menu ul {
 		text-align: center;
