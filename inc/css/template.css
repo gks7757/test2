@@ -583,7 +583,7 @@ a.site_link::after {
 	}
 	.borard_view aside > div > ul li a {
 		display: block;
-		padding: 0 70px 0 0px;
+		padding: 0 82px 0 0px;
 	}
 	.borard_view aside > div > ul li h4 {
 		padding-top: 0;
@@ -597,8 +597,12 @@ a.site_link::after {
 		white-space: normal;
 	}
 	.borard_view aside > div > ul li .photo {
-		width: 64px;
-		height: auto;
+		width: 75px;
+		height: 46px;
+	}
+	.borard_view aside .ad_area_01,
+	.borard_view aside .ad_area_02 {
+		text-align: center;
 	}
 }
 
@@ -685,7 +689,7 @@ a.site_link::after {
 		padding: 20px 0;
 	}
 	.borard_view aside > div > ul li a {
-		padding-top: 8px;
+		padding-top: 5px;
 	}
 
 

@@ -662,7 +662,7 @@ footer#footer ul.sns li a img.naverblog {
 		width: 100%;
 	}
 	footer#footer .family_site ul {
-		bottom: 100px;
+		bottom: 115px;
 		left: 0;
 		right: 0;
 		width: calc(100% - 30px);
@@ -674,3 +674,13 @@ footer#footer ul.sns li a img.naverblog {
 	}
 }
 
+/* 모바일 해상도 */
+@media all and (max-width: 720px) {
+	/* Footer */
+	footer#footer ul.company_info li span {
+		margin-right: 5px;
+	}
+	footer#footer ul.company_info li span::before {
+		margin-right: 5px;
+	}
+}
