@@ -767,9 +767,10 @@
 	}
 	.wiki .slide_wrap ul li .txt .tit {
 		font-size: 16px;
+		padding-top: 30px;
 	}
-	.wiki .slide_wrap ul li .txt .tit {
-		font-size: 16px;
+	.wiki .slide_wrap ul li .txt .info {
+		top: 7px;
 	}
 	.wiki .btn_wrap {
 		margin: 20px 0 30px;
