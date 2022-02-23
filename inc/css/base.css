@@ -76,7 +76,7 @@ textarea {
 	padding: 14px 18px;
 	height: 50px;
 	box-sizing: border-box;
-	background-color: #f5f6f8;
+	background-color: #fff;
 	-webkit-appearance: none;
 	border: 1px solid transparent;
 }
@@ -103,16 +103,16 @@ button,input[type="submit"],input[type="image"] {
 	border-radius: 0;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-	color: #E0E4EF;
+	color: #999;
 }
 ::-moz-placeholder { /* Firefox 19+ */
-	color: #E0E4EF;
+	color: #999;
 }
 :-ms-input-placeholder { /* IE 10+ */
-	color: #E0E4EF;
+	color: #999;
 }
 :-moz-placeholder { /* Firefox 18- */
-	color: #E0E4EF;
+	color: #999;
 }
 input:focus::-webkit-input-placeholder {
 	color: transparent;

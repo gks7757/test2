@@ -6,15 +6,10 @@
 	position: fixed;
 	left: 0px;
 	width: 100%;
-	background-color: #385195;
 	z-index: 50;
-	height: 90px;
+	background-color: #fff;
 	transition: all 100ms ease-in-out;
-}
-#header_wrap.on {
 	box-shadow: 0px 0px 5px 0px #0000001a;
-	background-color: #385195;
-	transition: all 100ms ease-in-out;
 }
 header#header {
 	width: 100%;
@@ -28,27 +23,16 @@ header#header .inner {
 header#header h1 {
 	line-height: 0;
 }
-#header_wrap h1 .defult img {
-	width: 36px;
-	height: 36px;
+#header_wrap h1 img {
+	width: 136px;
+	height: auto;
 }
-#header_wrap h1 .scroll img {
-    width: 136px;
-    height: 39px;
-}
-#header_wrap .defult {
-	display: none;
-}
-#header_wrap.on .scroll {
-	display: block;
-}
-
 
 /* Scroll, Sub Header */
 .header_search {
 	display: none;
 	position: absolute;
-	top: 0;
+	top: -4px;
 	left: 152px;
 }
 #header_wrap .header_search {
@@ -57,27 +41,36 @@ header#header h1 {
 #header_wrap .header_search.on {
 	display: block;
 }
+#header .search_basic input[type="text"] {
+	color: #E0E4EF;
+}
 #header .search_basic input[type="text"]:focus {
-	box-shadow: 0px 0px 10px rgb(0 0 0 / 41%);
+	color: #333;
 }
 .header_search .search_basic .searchBox {
 	width: 440px;
 	height: 44px;
+	border: 2px solid #3791FF;
+	border-radius: 10px;
 }
 .header_search .search_basic .search_input {
 	padding-left: 110px;
 	box-shadow: none;
 	padding-right: 50px;
+	font-size: 14px;
 }
 .header_search .search_basic .select_type {
 	width: 100px;
 	font-size: 13px;
 }
+.header_search .search_basic .btn_search {
+	right: 10px;
+}
 .header_search .search_basic .ico_search_submit {
-	width: 22px;
-	height: 22px;
+	width: 36px;
+	height: 36px;
 	background: url(../images/layout/hd_ico_search.png) no-repeat;
-	background-size: 22px 125px;
+	background-size: 36px auto;
 }
 .header_search .select_type_list {
 	top: 45px;
@@ -86,16 +79,16 @@ header#header h1 {
 #header_wrap .header_ranking {
 	display: block;
 	position: absolute;
-	top: 0;
+	top: -2px;
 	left: 610px;
-	width: 140px;
+	width: 120px;
 	height: 28px;
 	cursor: pointer;
 	padding-bottom: 10px;
 }
 #header_wrap .header_ranking .rolling_ranking {
-	width: 140px;
-	height: 28px;
+	width: 120px;
+	height: 36px;
 	overflow: hidden;
 }
 #header_wrap .header_ranking .rolling_ranking ul {
@@ -106,9 +99,19 @@ header#header h1 {
 }
 #header_wrap .header_ranking .rolling_ranking ul li a {
 	display: block;
-	color: #fff;
 	margin: 0;
 	padding: 0;
+}
+#header_wrap .header_ranking .rolling_ranking i {
+	background-color: #0474D6;
+	border-radius: 4px;
+	display: inline-block;
+	padding: 2px 6px;
+	color: #fff;
+	margin-right: 5px;
+}
+#header_wrap .header_ranking .rolling_ranking span {
+	margin-right: 5px;
 }
 #header_wrap .ranking_box {
 	display: none;
@@ -117,9 +120,14 @@ header#header h1 {
 	left: 600px;
 	top: 0;
 	z-index: 10;
+	background-color: #fff;
+	box-shadow: 0px 0px 5px 0px #0000001a;
 }
 #header_wrap .ranking_box.on {
 	display: block;
+}
+#header_wrap .ranking_box ul.tab li {
+	padding: 6px 0;
 }
 
 /* GNB */
@@ -139,15 +147,12 @@ header#header nav#gnb > ul > li {
 	margin: 0 5px;
 	position: relative;
 }
-header#header nav#gnb > ul > li:first-child {
-	margin-left: 0;
-}
 header#header nav#gnb > ul > li:last-child {
 	margin-right: 0;
 }
 header#header nav#gnb ul li a {
-	color: #fff;
-	font-weight: 300;
+	font-weight: 500;
+	font-size: 15px;
 	padding: 10px 5px;
 }
 header#header nav#gnb > ul > li:last-child a {
@@ -169,13 +174,29 @@ header#header nav#gnb > ul > li.link a:after {
     background: url(../images/template/ico_link.png) no-repeat;
     background-size: 11px 11px;
 }
-
+div.category-news header#header nav#gnb > ul li:nth-child(1) a,
+div.category-law-news header#header nav#gnb > ul li:nth-child(1) a,
+div.category-patent-news header#header nav#gnb > ul li:nth-child(1) a {
+	color: #378EFF;
+}
+div.category-wiki header#header nav#gnb > ul li:nth-child(2) a,
+div.category-law-wiki header#header nav#gnb > ul li:nth-child(2) a,
+div.category-patent-wiki header#header nav#gnb > ul li:nth-child(2) a {
+	color: #378EFF;
+}
+div.page-id-93 header#header nav#gnb > ul li:nth-child(3) a,
+div.page-id-95 header#header nav#gnb > ul li:nth-child(3) a {
+	color: #378EFF;
+}
+div.page-id-91 header#header nav#gnb > ul li:nth-child(4) a {
+	color: #378EFF;
+}
 /* GNB button */
 header#header .btn_gnb_m {
 	display: none;
 	position: absolute;
     left: -11px;
-    top: 0;
+    top: -1px;
 	width: 40px;
     height: 40px;
 }
@@ -186,7 +207,7 @@ header#header .btn_gnb_m i:after {
 	position: absolute;
 	height: 2px;
 	margin: 0;
-	width: 24px;
+	width: 20px;
 	right: 0;
 	left: 0;
 	margin-left: auto;
@@ -200,7 +221,7 @@ header#header .btn_gnb_m i {
 	top: 50%;
 	text-align: left;
 	text-indent: -9999px;
-	width: 18px;
+	width: 15px;
 }
 header#header .btn_gnb_m i:before {
 	top: -7px;
@@ -249,6 +270,7 @@ header#header .btn_gnb_m.on i:after{
 .lnb {
 	width: 100%;
 	background-color: #fff;
+	border-top: 1px solid #f0f0f0;
 }
 .lnb ul {
 	display: flex;
@@ -271,20 +293,25 @@ header#header .btn_gnb_m.on i:after{
 	font-weight: 700;
 	border-bottom: 2px solid #378EFF;
 }
-
+.page-id-426 .content .inner .lnb {
+	margin-bottom: 20px;
+}
 /* Container */
 #container {
-	padding-top: 90px;
+	padding-top: 85px;
 }
 .search #container {
-	padding-top: 145px;
+	padding-top: 140px;
 }
-
 /* Content */
 .content .inner {
 	max-width: 1240px;
-	padding: 40px 0;
+	padding: 50px 0;
 	margin: 0 auto ;
+}
+.page-id-426 .content .inner {
+	max-width: 100%;
+	padding: 0 0 40px 0;
 }
 .content.grey {
 	background-color: #E6EBF1;
@@ -308,18 +335,26 @@ header#header .btn_gnb_m.on i:after{
 #container .contents_header h2.single {
 	margin-top: 20px;
 }
+#container.single-post .contents_header {
+	display: none;
+}
 
 
 /* 검색페이지 공통
 **************************************************/
-body.search {
+body.search,
+div.page-id-426 {
 	background-color: #F2F6F9;
 }
-body.search #header_wrap {
+body.search #header_wrap,
+div.page-id-426 #header_wrap{
 	height: auto;
 	box-shadow: 0px 0px 5px 0px #0000001a;
 }
-
+.search_result {
+	max-width: 1240px;
+	margin: 0 auto;
+}
 
 /* Footer */
 footer#footer {
@@ -339,6 +374,9 @@ footer#footer .foot_menu ul {
 footer#footer .foot_menu ul li {
 	display: inline-block;
 	margin-left: 30px;
+}
+footer#footer .foot_menu ul li a {
+	cursor: pointer;
 }
 footer#footer .foot_menu ul li:first-child {
 	margin: 0;
@@ -395,6 +433,7 @@ footer#footer ul.company_info li:last-child {
 	border-radius: 6px;
 	display: inline-block;
 	font-weight: 500;
+	line-height: 1.5;
 }
 footer#footer .family_site {
 	position: absolute;
@@ -429,7 +468,7 @@ footer#footer .family_site ul {
 	display: none;
 	background-color: #fff;
 	position: absolute;
-	bottom: 40px;
+	top: 42px;
 	left: 0;
 	width: 100%;
 	border: solid 1px #ddd;
@@ -484,17 +523,14 @@ footer#footer ul.sns li a img.naverblog {
 @media all and (max-width: 1296px) {
 	/* 레이아웃 공통
 	**************************************************/
-	/* Header */	
+	/* Header */
 	header#header .inner {
 		margin: 10px auto;
 		max-width: calc(100% - 30px);
+		height: 36px;
 	}
 	header#header h1 {
 		text-align: center;
-	}
-	#header_wrap {
-		background-color: #385195;
-		height: 60px;
 	}
 	#header_wrap h1 .defult {
 		display: none;
@@ -506,30 +542,47 @@ footer#footer ul.sns li a img.naverblog {
 	#header_wrap .header_ranking {
 		display: none;
 	}
-	#header_wrap .ranking_box {
-		left: 0;
-	}
 
 	/* 검색 창 */
 	#header_wrap .header_search {
 		width: calc(100% + 30px);
-		top: 50px;
+		top: 46px;
 		left: -15px;
 		background-color: #fff;
+		border-radius: 0;
+		border: 1px solid #f0f0f0;
+		background-color: #fcfcfc;
+		border-left: none;
+		border-right: none;
 	}
 	.header_search .search_basic .searchBox {
 		width: 100%;
+		border: none;
+	}
+	#header .search_basic input[type="text"] {
+		background-color: #f8f8f8;
 	}
 	#header .search_basic input[type="text"]:focus {
 		box-shadow: none;
+		background-color: #fff;
+	}
+	.header_search .select_type_list {
+		top: 61px;
 	}
 
 	/* 랭킹 박스 */
 	#header_wrap .ranking_box {
 		width: calc(100% + 30px);
 		left: -15px;
-		top: 111px;
+		top: 108px;
 		border-radius: 0;
+		box-shadow: none;
+	}
+	#header_wrap .ranking_box .tit ul.tab {
+		padding: 0 15px;
+	}
+	#header_wrap .ranking_box ul.ranking_item_list li a {
+		max-width: 100%;
 	}
 
 	/* GNB */
@@ -612,13 +665,12 @@ footer#footer ul.sns li a img.naverblog {
 		white-space: nowrap;
 		margin-left: 15px;
 	}
-
 	/* Container */
 	#container {
-		padding-top: 60px;
+		padding-top: 57px;
 	}
 	.search #container {
-		padding-top: 114px;
+		padding-top: 110px;
 	}
 
 	/* Content */
@@ -650,6 +702,9 @@ footer#footer ul.sns li a img.naverblog {
 		padding-left: 10px;
 		line-height: 1.5;
 	}
+	footer#footer ul.company_info li:last-child br {
+		display: none;
+	}
 	footer#footer ul.sns,
 	footer#footer .family_site {
 		position: static;
@@ -662,6 +717,7 @@ footer#footer ul.sns li a img.naverblog {
 		width: 100%;
 	}
 	footer#footer .family_site ul {
+		top: auto;
 		bottom: 115px;
 		left: 0;
 		right: 0;
